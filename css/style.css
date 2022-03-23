@@ -324,7 +324,7 @@ section h2 span {
 		max-height: 25px;
 	}
 	
-  a#menu{
+   .menu {
   	display: inline-block;
   	position: relative;
   	width: 40px;
@@ -332,6 +332,22 @@ section h2 span {
   	margin: 10px;
 	}
 
+	#menuBtn {
+		display: block;
+		position: absolute;
+		top: 25%;
+		left: 100%;
+		
+	}
+
+	#xmark {
+		display:none;
+		position: absolute;
+		top: 25%;
+		left: 100%;
+		
+	}
+/* 
 	#menuBtn{
   	display: block;
   	position: absolute;
@@ -362,7 +378,7 @@ section h2 span {
 
 	#menuBtn:after{
   	margin-top: 5px;
-	}
+	} */
 
 	a#menu .close{
   	background: transparent;

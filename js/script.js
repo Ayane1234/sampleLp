@@ -1,8 +1,9 @@
 window.onload = function() {
 
     const xmark = document.getElementById("xmark");
-    console.log(xmark);
+    const menuBtn = document.getElementById("menuBtn");
     xmark.style.display = "none";
+    menuBtn.style.display = "block";
 }
 
 function clickBtn(){
@@ -24,14 +25,12 @@ function clickBtn(){
     // panelがdisplay:noneだったら、"block"に切り替える
     if (getComputedStyle(panel).display == "none") {
         panel.style.display = "block";
-        panel.style.zIndex = 99;
        
         // menuBtnのdisplay=none
         menuBtn.style.display = "none";
         
         // xmarkのstyleをblock
         xmark.style.display = "block";
-        xmark.style.zIndex = 100;
         
         // if文の中のプロパティをコンソールに出す
         console.log("ifの中のstyle.display:", style.display);
@@ -53,9 +52,10 @@ function closeBtn() {
     //panelをnoneにする
     panel.style.display = "none";
 
-    // id="menuBtn"を取得する
+    // id="menuBtn"、id="xmark"を取得する
     const menuBtn = document.getElementById("menuBtn");
-    
+    const xmark = document.getElementById("xmark");
+
     // menuBtnを表示にする
     menuBtn.style.display = "block";
 

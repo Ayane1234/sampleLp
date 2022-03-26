@@ -2,8 +2,8 @@ window.onload = function() {
 
     const xmark = document.getElementById("xmark");
     const menuBtn = document.getElementById("menuBtn");
-    xmark.style.display = "none";
-    menuBtn.style.display = "block";
+    // xmark.style.display = "none";
+    // menuBtn.style.display = "block";
 }
 
 function clickBtn(){
@@ -45,21 +45,3 @@ function clickBtn(){
     // if文をでた後のプロパティの値をコンソールに出す 
     console.log("if文をでた後のstyle.display:", style.display);
 } 
-function closeBtn() {
-    // class="panel"を取得する
-    const panel=document.getElementsByClassName("panel")[0];
-
-    //panelをnoneにする
-    panel.style.display = "none";
-
-    // id="menuBtn"、id="xmark"を取得する
-    const menuBtn = document.getElementById("menuBtn");
-    const xmark = document.getElementById("xmark");
-
-    // menuBtnを表示にする
-    menuBtn.style.display = "block";
-
-    // xmarkを非表示にする
-    xmark.style.display = "none";
-
-}

@@ -327,8 +327,7 @@ section h2 span {
    .menu {
   	display: inline-block;
   	position: relative;
-  	/* width: 40px;
-  	height: 40px; */
+  
   	margin: 10px;
 	}
 
@@ -345,17 +344,8 @@ section h2 span {
 		position: absolute;
 		top: 25%;
 		left: 100%;
-		z-index: 100;
-
-		
 	}
 
-	p #menuWrap {
-		position: relative;
-		display: none;
-	
-
-	}
 /* 
 	#menuBtn{
   	display: block;

@@ -327,8 +327,8 @@ section h2 span {
    .menu {
   	display: inline-block;
   	position: relative;
-  	width: 40px;
-  	height: 40px;
+  	/* width: 40px;
+  	height: 40px; */
   	margin: 10px;
 	}
 
@@ -345,7 +345,16 @@ section h2 span {
 		position: absolute;
 		top: 25%;
 		left: 100%;
+		z-index: 100;
+
 		
+	}
+
+	p #menuWrap {
+		position: relative;
+		display: none;
+	
+
 	}
 /* 
 	#menuBtn{
@@ -379,7 +388,7 @@ section h2 span {
 	#menuBtn:after{
   	margin-top: 5px;
 	} */
-
+/* 
 	a#menu .close{
   	background: transparent;
 	}
@@ -396,7 +405,7 @@ section h2 span {
 	a#menu .close:after{
   	transform: rotate(-135deg);
   	-webkit-transform: rotate(-135deg);
-	}
+	} */
 
 	.panel{
 		width: 100%;
@@ -404,8 +413,8 @@ section h2 span {
 		overflow: hidden;
 		position: relative;
 		left: 0;
-		top: -10px;
-		z-index: 100;
+		top: 20px;
+		z-index: 90;
 	}
 
 	#mainnav{
